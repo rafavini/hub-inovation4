@@ -1,9 +1,10 @@
+import Link from "next/link";
 import Socials from "./componentes/Socials";
 import Foto from "./componentes/foto";
 
 export default function Home() {
   return (
-    <section className="h-full">
+    <section className="h-full ">
       <div className="container mx-auto h-full">
         <div>
           <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
@@ -19,6 +20,7 @@ export default function Home() {
                 <div className="mb-8 xl:mb-0">
                   <Socials/>
                 </div>
+                <Link href={"/sobre"}>Sobre mim</Link>
               </div>
             </div>
             <div className="order-1 xl:order-none mb-8 xl:mb-0">
